@@ -5,7 +5,10 @@
     font-family: 'Tenor Sans', sans-serif;
 }
 
-
+*
+{
+    scroll-behavior: smooth;
+}
 
 h3
 {
@@ -16,18 +19,17 @@ h3
 
 .container
 {
-    background: rgb(126, 50, 50);
+    background: #fff;
     display: flex; 
-    height: 1000vh;
     justify-content: space-evenly; 
     position: relative;
-    margin-top: 20px;
+    margin-top: 0;
     --bs-gutter-x: 0rem;
 }
 
 .left-box
 {
-    flex-basis: 60%;
+    flex-basis: 66%;
     position: relative;
     background: #fff;
    
@@ -53,6 +55,7 @@ h3
     font-size: 18px;
     width: 100%;
     background: #fff;
+    border-bottom:  2px solid grey;
 }
 
 .menu a
@@ -95,9 +98,17 @@ h3
 
 .category
 {
-    background: #ffffff;
+    background: #fff;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+.category__header
+{
+font-weight: 700;
+margin: 3rem 0 1rem;
+font-size: 1.25rem;
 }
 
 .category__items
@@ -205,6 +216,13 @@ h3
     height: 600px;
     position: sticky;
     top: 0;
+}
 
-
+.container__footer
+{
+    border-top: 2px solid grey;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
 }
