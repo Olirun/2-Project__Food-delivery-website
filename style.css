@@ -21,15 +21,17 @@ h3
 {
     background: #fff;
     display: flex; 
-    justify-content: space-evenly; 
+    justify-content: space-around; 
     position: relative;
-    margin-top: 0;
-    --bs-gutter-x: 0rem;
+    margin-top: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .left-box
 {
-    flex-basis: 66%;
+    flex-basis: 60%;
     position: relative;
     background: #fff;
    
@@ -58,14 +60,14 @@ h3
     border-bottom:  2px solid grey;
 }
 
-.menu a
+.menu__a
 {
    margin: 15px;
    text-decoration: none;
    color: black;
    position: relative;
 }
-.menu a::after
+.menu__a::after
 {
     content: "";
     position: absolute;
@@ -76,7 +78,7 @@ h3
     bottom: -10px;
     transition: .4s;
 }
-.menu a:hover::after
+.menu__a:hover::after
 {
     width: 100%;
 }
@@ -124,7 +126,7 @@ font-size: 1.25rem;
 {
     width: 47%;
     background: #f8f9fa;
-    margin: 10px;
+    margin-top: auto;
     display: flex;
 }
 .category__item-wrap
@@ -190,33 +192,18 @@ font-size: 1.25rem;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .right-box
 {
     background: yellow;
-    flex-basis: 15%;
-    height: 600px;
+    /* flex-basis: 20%; */
+    /* height: 700px; */
+    width: 250px;
     position: sticky;
     top: 0;
 }
+
+
+
 
 .container__footer
 {
