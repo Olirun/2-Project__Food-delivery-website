@@ -7,8 +7,13 @@
     box-sizing: border-box;
     font-family: 'Tenor Sans', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
+body 
+{
+    background: #fff;
+}
 
 
 h3
@@ -20,7 +25,6 @@ h3
 
 .container
 {
-    background: #fff;
     display: flex; 
     justify-content: space-evenly; 
     position: relative;
@@ -34,8 +38,9 @@ h3
 {
     width: 70%;
     /* position: relative; */
-    background: #fff;
+    /* background: #fff; */
     margin-top: 4px;
+    margin-bottom: 10px;
    
 }
 
@@ -56,7 +61,7 @@ h3
     align-items: center;
     position:sticky;
     top: 0;
-    font-size: 18px;
+    font-size: 20px;
     width: 100%;
     background: white;
     border-bottom:  2px solid grey;
@@ -66,7 +71,7 @@ h3
 
 .menu__a
 {
-   margin: 20px;
+   margin: 15px;
    text-decoration: none;
    color: black;
    position: relative;
@@ -104,10 +109,11 @@ h3
 
 .category
 {
-    background: #fff;
+    /* background: #fff; */
     width: 100%;
     margin-top: 30px;
     padding-top: 15px;
+    background:#f2f2f2; 
 }
 
 .category__header
@@ -119,17 +125,17 @@ font-size: 1.25rem;
 
 .category__items
 {
-    background: #f8f9fa;
+    /* background: #fff; */
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 
 .category__item
 {
-    width: 47%;
-    background: #f8f9fa;
+    width: 43%;
+    background: #f2f2f2;
     margin-top: auto;
     display: flex;
 }
@@ -141,6 +147,7 @@ font-size: 1.25rem;
     display: flex;
     cursor: pointer;
     flex-direction: column;
+    background: #fff;
    
 }
 .category__item-wrap:hover
@@ -198,21 +205,12 @@ font-size: 1.25rem;
 
 .right-box
 {
-    background: white;
+    background: #fff;
     width: 23%;
-    /* margin-top: 10px; */
-    /* height: 700px; */
-    /* width: 250px; */
-
+    margin-bottom: 10px;
 }
 
-/* .right-box
-{
-    background: #f8f9fa;
-    width: 25%;
-    flex: 0 0 auto;
-    padding: 0;
-} */
+
 
 .cart
 {
@@ -223,7 +221,7 @@ font-size: 1.25rem;
     height: calc(100vh - 2rem);
     padding: 0;
     margin: 0;
-    background: #fff;
+    background: #f2f2f2;
 }
 
 .cart__main
@@ -235,9 +233,7 @@ font-size: 1.25rem;
     height: 100%;
     justify-content: space-between;
     padding: 0;
-    background: #f8f9fa;
 }
-
 .cart__header 
 {
     margin: 10px 10px;
@@ -268,6 +264,7 @@ font-size: 1.25rem;
     margin-bottom: 10px;
     height: 3rem;
     border: none;
+    padding: 10px;
     
 }
 
@@ -281,10 +278,116 @@ font-size: 1.25rem;
     align-items: center;
 }
 
+    
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+                                    /* АДАПТАЦИЯ */
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+{
+    .container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-box
+    {
+        width: 100%;
+    }
+    .right-box
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .menu
+    {
+        font-size: 20px;
+    }
+
+    .category__header
+    {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .category__items
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category__item
+    {
+        width: 350px;
+    }    
+
+    .category__item-header
+    {
+        font-size: 1.2rem;
+    }
+
+    .category__item-price
+    {
+    font-size: 1.1rem;
+
+    }
+    .category__item-weight
+    {
+        font-size: 0.9rem; 
+    }
+
+    .category__item-contents
+    {
+        font-size: 0.9rem
+    }
+
+
+
+    .right-box
+    {
+        width: 300px;
+        margin-bottom: 0;
+        border: none; 
+        margin-bottom: 10px;
+    }
+
+    .cart__btn
+    {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+}
 
 
 
